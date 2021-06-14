@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>web3</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<style>
+		*{
+				text-decoration: none;
+				font-family: 'Noto Sans KR', sans-serif; 
+
+			}
+
+		.all{
+				background-color: #a7dadb;
+			}
+
+		.logo{
+				margin-left: 30px;
+				margin-right: 30px;
+			}
+
+			.login{
+				margin-right: 100px;
+			}
+
+			.leftc{
+	   		margin-right: 15px;
+	   	}
+
+	   	.photos{
+	   		margin-left: 140px;
+	   		display: inline-block;
+	   		margin-top: 40px;
+	   	}
+
+	   	
+
+	   	.breadcrumb{
+	   		color: #0b4142
+
+	   	}
+
+	   	.breadcrumb a{
+	   		color: #0b4142
+	   	}
+
+	   	.photoman{
+	   		width: 35%;
+	   		display: inline-block;
+	   		margin-left: 50px;
+	   		position: absolute;
+	   		top: 200px;
+	   	}
+
+	   	.photoman h2{
+	   		font-size: 40px;
+	   		text-align: 600;
+	   		color: #0b4142;
+	   		margin-top: 20px;
+	   	}
+
+	   	.photoman h3{
+	   		font-size: 20px;
+	   		text-align: 200;
+	   		color: #0b4142;
+	   		margin-top: 50px;
+	   	}
+
+	   	.photoman h4{
+	   		font-size: 30px;
+	   		text-align: 200;
+	   		color: #0b4142;
+	   		margin-top: 30px;
+	   		margin-bottom: 20px;
+	   		display: inline-block;
+	   	}
+
+	   	.dropdown .btn {
+	   		background-color: #ffe147;
+	   		border: none !important;
+	   		color: #0b4142;
+	   	}
+
+	   	.bt2 .btn-outline-primary{
+	   		
+	   		margin-top: 150px;
+	   		color: #0b4142;
+	   		border: 2px solid #0b4142 !important;
+	   		font-weight: 400;
+	   	}
+
+	   	.bt2 .btn-primary{
+	   		border-bottom: none !important;
+	   		border: none !important;
+	   		margin-top: 150px;
+	   		background-color: #0b4142;
+	   	}
+
+	   	.bt2 .btn-outline-primary:hover{
+	   		background-color: #0b4142;
+	   		color: white;
+	   	}
+
+	   	.bt2 .btn-primary:hover{
+	   		color: #0b4142;
+	   		background-color: white;
+	   	}
+
+	   	.container {
+			margin-top: 40px;
+			margin-bottom: 140px;
+			}
+
+			.course {
+			display: inline-block;
+			}
+
+			.info{
+				color: #0b4142;
+				margin-top: 20px;
+				
+
+			}
+
+			
+			.light{
+				color: #262035;
+				font-size: 20px;
+			}	
+
+			.box1 h2{
+				margin-bottom: 0px;				
+				
+				display: inline-block;
+				font-size: 30px;
+				font-weight: 400;
+				
+				vertical-align: middle;
+				color: #0b4142;
+				margin-left: 200px;
+							
+				
+			}	
+
+			.box1{
+				margin-top: 100px;
+				margin-bottom: 50px;}
+
+				.rev a{
+					color: #0b4142;
+					font-size: 20px;
+				}
+
+				.rev{
+					display: inline-block;
+				}
+
+				footer-bottom {
+                padding: 0 16px;
+            }
+
+            .company-name {
+                margin-top: 20px;
+                font-size: 16px;
+                color: #333333;
+            }
+
+            
+            
+
+            .company-info {
+               
+                font-size: 12px;
+                color: #666666;
+                display: inline-block;
+               	vertical-align: middle;
+               	margin-left: 15px;
+            }
+
+            .company-notice {
+                
+                
+                text-align: right;
+                padding-right: 50px;
+                margin-bottom: 30px;
+                font-size: 12px;
+                color: #666666;
+                margin-left: 550px;
+                
+            }
+
+            .company-notice img{
+            	margin-left: 10px;
+            	
+
+            }
+
+            .footer{
+            	padding-top: 30px;
+        			background-color: #f0f0f0;
+        			padding-left: 30px;
+        			padding-bottom: 40px;
+            }
+
+            .llogo{
+            	display: inline-block;
+            	vertical-align: middle;
+            	margin-left: 150px;
+            	width: 170px;
+            	padding-top: 20px;
+            	
+            }
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(240, 244, 244, 0.5)">
+	  
+	  <div class="logo">
+	  	<a class="navbar-brand" href="#">
+	  	<img src="https://i.ibb.co/rxYnCGZ/image.png" alt="image" border="0"  height="54" class="d-inline-block align-top" alt="" loading="lazy">
+	  	</a>
+	  </div>
+
+	  <!--반응형-->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon">
+	    </span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <div class="leftc"><a class="nav-link" style="color: #0b4142" href="./web2.html">클래스<span class="sr-only">(current)</span></a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <div class="leftc"><a class="nav-link" style="color: #0b4142" href="./web2.html">키트</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <div class="leftc"><a class="nav-link" style="color: #0b4142" href="./web2.html">핸드메이드</a>
+	        </div>
+	      </li>
+	    </ul>
+
+	    <div class= "login">
+		        <ul class="navbar-nav">
+			      <li class="nav-item">
+			        <div class="leftc"><a class="nav-link" href="#">
+			        <img src="https://www.samsung.com/sec/static/_images/common/icon-people.svg" alt="image" border="0"  height="26px" class="d-inline-block" alt="" loading="lazy" style=""></a></div>
+			      </li>
+			      <li class="nav-item">
+			      	<div class="leftc"><a class="nav-link" href="#">
+			        <img src="https://i.ibb.co/ZNX6Xj6/heart.png" alt="like" border="0"  height="26px" class="d-inline-block" alt="" loading="lazy"></a></div>
+			      </li>
+			      <li class="nav-item">
+			      	<div class="leftc"><a class="nav-link" href="#">
+			        <img src="https://www.samsung.com/sec/static/_images/common/icon-zoom.svg" alt="image" border="0"  height="26px" class="d-inline-block" alt="" loading="lazy"></a></div>
+			      </li>
+		      </ul>
+	      </div>
+	  
+	  </div>
+	 
+	 </nav>
+
+		<div class="all"> 
+		 <div class="photos">
+		 	<img src="https://i.ibb.co/9G1FGGm/007ca41f26503d954551ff1faf1e8f9a.png" height="800;" class="maca">
+		 </div>
+
+		 <div class="photoman">
+				<nav aria-label="breadcrumb" >
+				  <ol class="breadcrumb" style="background-color: rgba(222, 222, 222, 0);">
+				    <li class="breadcrumb-item"><a href="./web1.html">MAIN</a></li>
+				    <li class="breadcrumb-item"><a href="./web2.html">클래스</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">뚱카롱</li>
+				  </ol>
+				</nav>
+				<h3>원데이 클래스</h3>
+				<h2>
+					<b>[서울/관악] 솜씨당 마카롱 뚱카롱 10종 원데이 클래스</b>
+				</h2>
+				<h4> 39,000원</h4><span class="rev"><a href="#"> ∣ 리뷰(35)</a></span>
+
+
+				<div class="dropdown" >
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    클래스 수업일정
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    <a class="dropdown-item" href="#">06/17 (목) 12:00~13:00 잔여:5</a>
+			    <a class="dropdown-item" href="#">06/18 (목) 12:00~13:00 잔여:2</a>
+			    <a class="dropdown-item" href="#">06/19 (목) 12:00~13:00 잔여:4</a>
+			  </div>
+			</div>
+
+			<div class="bt2">
+			
+			<a class="btn btn-primary btn-lg" href="#" role="button">구매하기</a>
+			<button type="button" class="btn btn-outline-primary btn-lg">장바구니</button>
+			</div>
+		 </div>
+		
+		</div>
+
+		<div class="box1">
+		  <h2>HAPPY TOGETHER<span class="light"> ∣ 이 상품을 조회한 고객님들이 같이 조회한 상품</span></h2>
+		 </div>
+
+		<div class="container">
+		  <div class="row">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					<a href="./web3.html" class="course">
+						<img class="course-image" src="http://thumbnail.10x10.co.kr/webimage/image/basic600/283/B002835030.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false" alt="가드닝" width="100%">
+						<div class="info">
+						<h4>[경기도/수원] 봄내음 가득, 가드닝 클래스</h4>
+							<div class="lecturer">
+								<span class="name">60,000원</span>
+							</div>
+						</div>
+					</a>
+				</div>
+					
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					<a href="./web3.html" class="course">
+						<img class="course-image" src="https://cdn.class101.net/images/f0eb5e8e-a721-401f-a447-a3bf104a255e/original" alt="오일파스텔" width="100%">
+						<div class="info">
+							<h4>[화곡] 부드러운 오일파스텔 일러스트!</h4>
+							<div class="lecturer">
+								<span class="name">45,000원</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					<a href="./web3.html" class="course">
+						<img class="course-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZNNMpTFTiuuqAolVr5ztcAJLqcvtlaP06Jw&usqp=CAU" alt="케이크" width="100%">
+						<div class="info">
+							<h4>[광주] 특별한 날을 위한 케이크 만들기</h4>
+							<div class="lecturer">
+								<span class="name">55,000원</span>
+							</div>
+						</div>
+					</a> 
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+					<a href="./web3.html" class="course">
+						<img class="course-image" src="https://image.idus.com/image/files/baff99e11d0a4669b727020340cd1b6e_320.png" alt="" width="100%">
+						<div class="info">
+							<h4>[서울/홍대]나만의 오팔 순은 팔찌 만들기</h4>
+							<div class="lecturer">
+								<span class="name">39,000원</span>
+							</div>
+						</div>
+					</a> 
+				</div>
+
+			</div>
+		</div>
+
+		  	<div class="footer">  
+            
+            
+               <img src="https://i.ibb.co/4ZNbWGv/dd.png" alt="logo" class="llogo"> 
+								                               
+                <span class="company-info">
+                <h1 class="company-name">(주)솜씨당 컴퍼니</h1>
+
+                    사업자등록 : 588-87-00000 ㅣ대표 : 양양양<br> 
+                    통신판매업: 신고번호 제2021-서울강남-0000호<br>
+                    서울시 강남구 여긴 어디게
+                </span>
+
+                <span class="company-notice">
+                    고객센터: 1800-1234
+                    <a href="#"><img src="https://ifh.cc/g/genzc9.png" width="15px"></a>
+                    <a href="#"><img src="https://ifh.cc/g/sa2twz.png" width="25px"></a>
+                </span>
+            
+
+       </div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
